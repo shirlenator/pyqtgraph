@@ -44,6 +44,10 @@ if QT_LIB == None:
 
 if QT_LIB == PYSIDE:
     from PySide import QtGui, QtCore, QtOpenGL, QtSvg
+    try:
+        from PySide import QtTest
+    except ImportError:
+        pass
     import PySide
     try:
         from PySide import shiboken
@@ -115,6 +119,10 @@ elif QT_LIB == PYQT4:
         pass
     try:
         from PyQt4 import QtOpenGL
+    except ImportError:
+        pass
+    try:
+        from PyQt4 import QtTest
     except ImportError:
         pass
 

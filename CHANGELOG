@@ -1,4 +1,8 @@
-pyqtgraph-0.9.9  [unreleased]
+pyqtgraph-0.9.10
+
+  Fixed installation issues with more recent pip versions.
+
+pyqtgraph-0.9.9
 
   API / behavior changes:
     - Dynamic import system abandoned; pg now uses static imports throughout.
